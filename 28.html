@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<title>Aplikasi Vue</title>
+	<script scr="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js">
+	</script>
+	
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Ro
+boto:wght@300&display=swap');
+		h1 {font-family: 'Roboto', sans-serif;}
+	</style>
+</head>
+
+<body>
+	<div id="app">
+		<h1 v-if="login">
+		{{nama}}
+		</h1>
+	</div>
+<script>
+	let myvue = new vue({
+
+		el: '#app',
+		data: {
+			nama: 'Joni Gudel',
+			login: true
+		}
+	})
+</script>
+
+</body>
+</html>
+
+
+
